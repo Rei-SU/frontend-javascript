@@ -75,3 +75,16 @@ function executeWork(employee: Director | Teacher): void {
 // Example usage:
 executeWork(createEmployee(200)); // Output: Getting to work
 executeWork(createEmployee(1000)); // Output: Getting to director tasks
+
+type Subjects = "Math" | "History";
+
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  }
+  return "Teaching History";
+}
+
+// Example usage:
+console.log(teachClass("Math")); // Teaching Math
+console.log(teachClass("History")); // Teaching History
